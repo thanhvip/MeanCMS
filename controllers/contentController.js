@@ -18,6 +18,7 @@ exports.getContentList = function(req, filter, loggedIn, callback) {
     var useYear = false;
     var month = req.query.month;
     var year = req.query.year;
+
     if (month !== undefined && month !== null) {
         month = parseInt(month);
         useMonth = true;
